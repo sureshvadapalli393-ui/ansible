@@ -1,0 +1,20 @@
+- name: suresh
+  dob: "05-06-1998"
+  age: 21
+  addresses:
+  - doorno : 00-0
+    street: pagadalapeta
+    city: bhogapuram
+    pin: 535216
+    type: perm
+
+  - doorno : 00-0
+    street: pagadalapeta
+    city: bhogapuram
+    pin: 535216
+    type: curr
+
+  Skills:
+  - java
+  - devops
+  - linux 
