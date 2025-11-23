@@ -11,7 +11,12 @@
   - name: default variables
     ansible.builtin.debug:
       msg: "Hello i am {{ name | default('suresh')}}"
-      
+
+  listTags:
+  - key: Application
+    value: payment
+  - key: Environment
+    value: dev    
 
   - name:
     ansible.builtin.debug:
@@ -20,3 +25,10 @@
   - name: convert map to list
     ansible.builtin.debug:
       msg: "Tags: {{ tags | dict2items }}"
+
+
+
+  - name: convert to map
+    ansible.builtin.debug:
+      msg: "Tag map: {{ listTags | items2dict }}"
+
