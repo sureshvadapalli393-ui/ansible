@@ -6,5 +6,5 @@
   tasks:
   - name: checj number is lesss than 10 aor not 
     ansible.builtin.debug:
-      msg: "Given number is {{ number }} is less than 10"
+      msg: Given number is {{ number }} is less than 10
     when: number <10
