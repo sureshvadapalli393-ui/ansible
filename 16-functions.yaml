@@ -3,6 +3,10 @@
   connection: local
   vars:
     techonologies: Devops, Linux, shell, ansible
+
+    tags:
+      Application: payment
+      Environment: dev
   tasks:
   - name: default variables
     ansible.builtin.debug:
@@ -12,3 +16,7 @@
   - name:
     ansible.builtin.debug:
       msg: "Techonology are: {{ techonologies | split(',')}}"
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg:"tags: {{ tags | dict2items }}"
