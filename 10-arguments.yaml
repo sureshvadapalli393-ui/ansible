@@ -1,0 +1,7 @@
+- name: multiple plays
+  hosts: local
+  connection: local
+  tasks:
+  - name: print the course
+    ansible.builtin.debug:
+      msg:  "course name is: {{ course }}, duration is {{ Duration }}, tainer is {{ Trainer }}"
