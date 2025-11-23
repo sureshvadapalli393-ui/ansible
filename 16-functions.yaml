@@ -9,6 +9,6 @@
       msg: "Hello i am {{ name | default('suresh')}}"
       
 
-- name:
-  ansible.builtin.debug:
-    msg: "Techonology are: {{ techonologies | split(',')}}"
+  - name:
+    ansible.builtin.debug:
+      msg: "Techonology are: {{ techonologies | split(',')}}"
