@@ -1,0 +1,9 @@
+- name: multiple plays
+  hosts: frontend
+  tasks:
+  - name: play-01 and task 01
+    ansible.builtin.debug:
+      msg: "Hi Hello1"
+  - name: play-01 and task 01
+    ansible.builtin.debug:
+      msg: "Hi Hello1"
