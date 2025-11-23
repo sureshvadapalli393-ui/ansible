@@ -1,7 +1,14 @@
 - name: fucntions
   hosts: local
   connection: local
+  vars:
+    techonologies: Devops, Linux, shell, ansible
   tasks:
   - name: default variables
     ansible.builtin.debug:
       msg: "Hello i am {{ name | default('suresh')}}"
+      
+
+- name:
+  ansible.builtin.debug:
+    msg: "Techonology are: {{ techonologies | split(',')}}"
