@@ -11,12 +11,7 @@
   - name: default variables
     ansible.builtin.debug:
       msg: "Hello i am {{ name | default('suresh')}}"
-
-  listTags:
-  - key: Application
-    value: payment
-  - key: Environment
-    value: dev    
+ 
 
   - name:
     ansible.builtin.debug:
